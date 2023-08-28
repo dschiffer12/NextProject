@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: 'Geo-Forged',
+  title: 'Focus Forge',
   description: 'Created in Next.js',
 }
 
