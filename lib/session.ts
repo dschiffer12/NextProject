@@ -4,7 +4,6 @@ import { AdapterUser } from "next-auth/adapters";
 import GoogleProvider from "next-auth/providers/google";
 import jsonwebtoken from 'jsonwebtoken'
 import { JWT } from "next-auth/jwt";
-
 import { createUser, getUser } from "./actions";
 import { SessionInterface, UserProfile } from "@/common.types";
 
@@ -21,7 +20,7 @@ export const authOptions: NextAuthOptions = {
         {
           ...token,
           iss: "grafbase",
-          exp: Math.floor(Date.now() / 1000) + 60 * 60,
+          exp: Math.floor(Date.now() / 10000) + 60 * 60,
         },
         secret
       );

@@ -145,7 +145,8 @@ const ProjectForm = ({ type, session, project }: Props) => {
                 title="Category"
                 state={form.category}
                 filters={categoryFilters}
-                setState={(value) => handleStateChange('category', value)} placeholder={''}            />
+                setState={(value) => handleStateChange('category', value)}
+            />
 
             <div className="flexStart w-full">
                 <Button
