@@ -44,10 +44,10 @@ export const createUserMutation = `
 			user {
 				name
 				email
-				avatarUrl
+				avatarURL
 				description
 				githubUrl
-				linkedinUrl
+				linkedInUrl
 				id
 			}
 		}
@@ -76,7 +76,7 @@ export const projectsQuery = `
             id
             email
             name
-            avatarUrl
+            avatarURL
           }
         }
       }
@@ -98,7 +98,7 @@ export const getProjectByIdQuery = `
         id
         name
         email
-        avatarUrl
+        avatarURL
       }
     }
   }
@@ -110,10 +110,10 @@ export const getUserQuery = `
       id
       name
       email
-      avatarUrl
+      avatarURL
       description
       githubUrl
-      linkedinUrl
+      linkedInUrl
     }
   }
 `;
@@ -125,9 +125,9 @@ export const getProjectsOfUserQuery = `
       name
       email
       description
-      avatarUrl
+      avatarURL
       githubUrl
-      linkedinUrl
+      linkedInUrl
       projects(last: $last) {
         edges {
           node {
